@@ -1,0 +1,31 @@
+#Continuous Time Wave Generation
+import numpy as np
+import matplotlib.pyplot as plt
+
+#x(t) = A sin(2*pi*f*t + phi)
+A = 1
+f = 2
+phi = 0
+t = np.linespace(0, 1, 100)
+x = A*np.sin(2*np.pi*f*t+phi
+plt.plot(t, x)
+plt.xlabel('Time (t)')
+plt.ylabel('Amplitude')
+plt.title('Continous Time Sine Wave')
+plt.show()
+
+#Continuous Time Cosine Signal Generation
+import numpy as np
+import matplotlib.pyplot as plt
+
+#x(t) = A cos(2*pi*f*t + phi)
+A = 1
+f = 2
+phi = 0
+t = np.linespace(0, 1, 100)
+x = A*np.cos(2*np.pi*f*t+phi
+plt.plot(t, x)
+plt.xlabel('Time (t)')
+plt.ylabel('Amplitude')
+plt.title('Continous Time Cosine Wave')
+plt.show()
