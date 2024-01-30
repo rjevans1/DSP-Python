@@ -29,3 +29,18 @@ plt.xlabel('Time (t)')
 plt.ylabel('Amplitude')
 plt.title('Continous Time Cosine Wave')
 plt.show()
+
+#Unit Impulse Signal (Dirac dwlta function)
+import numpy as np
+import matplotlib.pyplot as plt
+
+#x(t) = A cos(2*pi*f*t + phi)
+n = rage(-3, 4, 1)
+y = []
+for i in range (len(n)):
+    temp = (1 if n[i] == 0 else 0)
+    y.append(temp)
+
+plt.stem(n, y)
+plt.axis((-3.1, 3.1, -0.1, 1.1))
+plt.show()
